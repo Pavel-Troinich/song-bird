@@ -1,0 +1,24 @@
+{
+  "name": "pavel-troinich-jsfe2022q3",
+  "version": "1.0.0",
+  "description": "Private repository for @pavel-troinich",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolling-scopes-school/pavel-troinich-JSFE2022Q3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolling-scopes-school/pavel-troinich-JSFE2022Q3/issues"
+  },
+  "homepage": "https://github.com/rolling-scopes-school/pavel-troinich-JSFE2022Q3#readme",
+  "devDependencies": {
+    "eslint": "^8.25.0",
+    "webpack": "^5.74.0"
+  }
+  
+}

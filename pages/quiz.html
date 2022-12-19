@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../src/assets/bird.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/styles/normalize.css">
+  <link rel="stylesheet" href="../src/styles/common.css">
+  <link rel="stylesheet" href="../src/styles/quiz.css">
+  <title>Song Bird</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-item"><a class="nav-item_link logo" href="./index.html">SongBird</a></div>
+        <div class="nav-item mobile-hidden"><a class="nav-item_link" href="./quiz.html">Викторина</a></div>
+        <div class="nav-item mobile-hidden"><a class="nav-item_link" href="./gallery.html">Галерея</a></div>
+        <div class="nav-item score">Очки: 0</div>
+      </nav>
+    </header>
+    <section class="parts">
+      <div class="parts-item">Разминка</div>
+      <div class="parts-item">Воробьиные</div>
+      <div class="parts-item">Лесные птицы</div>
+      <div class="parts-item">Певчие птицы</div>
+      <div class="parts-item">Хищные птицы</div>
+      <div class="parts-item">Морские тицы</div>
+    </section>
+    <section class="task">
+      <div class="task-img"></div>
+      <div class="task-song">
+        <div class="task-song_title">
+          <h3 class="song-title">******</h3>
+        </div>
+        <div class="player">
+          <div class="control">
+            <audio class="task-audio"></audio>
+            <div class="play-control">
+              <div class="play-button play-task"></div>
+              <div class="time-bar">
+                <input class="time task-time" type="range" min="0" max="100" step=".1" value="0">
+                <div class="time-info">
+                  <div class="task-time-current">0</div>
+                  <div class="task-time-duration">0</div>
+                </div>
+              </div>
+            </div>
+            <div class="volume-control">
+              <div class="volume-button"></div>
+              <div class="volume-bar">
+                <input class="volume task-volume" type="range" min="0" max="1" step=".01" value=".6">
+                <div class="volume-info task-volume-info">60</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="solution">
+      <div class="options">
+        <div class="options-item" id="0"><span class="item-dot"></span> Птица</div>
+        <div class="options-item" id="1"><span class="item-dot"></span> Птица</div>
+        <div class="options-item" id="2"><span class="item-dot"></span> Птица</div>
+        <div class="options-item" id="3"><span class="item-dot"></span> Птица</div>
+        <div class="options-item" id="4"><span class="item-dot"></span> Птица</div>
+        <div class="options-item" id="5"><span class="item-dot"></span> Птица</div>
+      </div>
+      <div class="sample">
+        <div class="samle-offer">Послушайте трек и выберите птицу</div>
+        <div class="sample-wrapper hidden">
+          <div class="sample-item">
+            <div class="task-img sample-img"></div>
+            <div class="task-song sample-song">
+              <div class="task-song_title">
+                <h3 class="song-title sample-title">Птица</h3>
+                <p class="song-title-lat sample-title-lat">Latyn</p>
+              </div>
+              <div class="player">
+                <div class="control">
+                  <audio class="sample-audio"></audio>
+                  <div class="play-control">
+                    <div class="play-button play-sample"></div>
+                    <div class="time-bar">
+                      <input class="time sample-time" type="range" min="0" max="100" step=".1" value="0">
+                      <div class="time-info">
+                        <div class="sample-time-current">0</div>
+                        <div class="sample-time-duration">0</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="volume-control">
+                    <div class="volume-button"></div>
+                    <div class="volume-bar">
+                      <input class="volume sample-volume" type="range" min="0" max="1" step=".01" value=".6">
+                      <div class="volume-info sample-volume-info">60</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sample-descr">Звуки, издаваемые журавлем, похожи на звонкое «кур-лы – кур-лы». Журавли чаще всего поют дуэтом – одна птица начинает запев со слога «кур», а вторая подхватывает «лы».
+            Если птица поёт одна, то она издает только звук «кур».
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="next">Следующий уровень</div>
+  </div>
+  <script src="../dist/bundle.js"></script>
+</body>
+</html>

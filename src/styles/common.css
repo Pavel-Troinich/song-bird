@@ -1,0 +1,89 @@
+@font-face {
+	font-family: 'Belissimo script'; 
+	src: url(../fonts/Belissimo-script.ttf); 
+}
+
+:root {
+  --background: rgba(0, 87, 218, 0.7);
+  --border: #bbe2ff;
+  --font: #ddf0ff;
+  --hover: rgb(167, 255, 35);
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background: url(../assets/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  color: var(--font);
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header,
+.footer {
+  width: 100%;
+  height: 60px;
+  border: 1px solid var(--border);
+  background: var(--background);
+  box-shadow: 0 0 6px rgba(0, 17, 255, 0.918);
+}
+
+.header {
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+}
+
+.nav {
+  display: flex;
+  margin: 0px 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item_link {
+  text-decoration: none;
+  color: var(--font);
+}
+
+.nav-item_link:hover {
+  color: var(--hover);
+  transition: all ease-in-out 0.1s;
+}
+
+.logo {
+  font-family: 'Belissimo script';
+  font-size: 42px;  
+}
+
+@media (max-width: 640px) {
+  .logo {
+    font-size: 36px;
+  }
+
+  .wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 32px;
+  }
+
+  .wrapper {
+    width: 95%;
+  }
+}
