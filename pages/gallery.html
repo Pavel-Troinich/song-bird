@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/styles/normalize.css">
+  <link rel="stylesheet" href="../src/styles/common.css">
+  <link rel="stylesheet" href="../src/styles/quiz.css">
+  <link rel="stylesheet" href="../src/styles/gallery.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-item"><a class="nav-item_link logo" href="./index.html">SongBird</a></div>
+        <div class="nav-item mobile-hidden"><a class="nav-item_link" href="./quiz.html">Викторина</a></div>
+        <div class="nav-item mobile-hidden"><a class="nav-item_link" href="./gallery.html">Галерея</a></div>
+      </nav>
+    </header>
+    <h1 class="gallery-title">Галерея</h1>
+    <section class="gallery">
+      <div class="overlay hidden">
+        <div class="sample">
+          <div class="sample-wrapper">
+            <div class="sample-item">
+              <div class="task-img sample-img"></div>
+              <div class="task-song sample-song">
+                <div class="task-song_title">
+                  <h3 class="song-title sample-title"></h3>
+                  <p class="song-title-lat sample-title-lat"></p>
+                </div>
+                <div class="player">
+                  <div class="control">
+                    <audio class="sample-audio"></audio>
+                    <div class="play-control">
+                      <div class="play-button play-sample"></div>
+                      <div class="time-bar">
+                        <input class="time sample-time" type="range" min="0" max="100" step=".1" value="0">
+                        <div class="time-info">
+                          <div class="sample-time-current">00</div>
+                          <div class="sample-time-duration">00</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="volume-control">
+                      <div class="volume-button"></div>
+                      <div class="volume-bar">
+                        <input class="volume sample-volume" type="range" min="0" max="1" step=".01" value=".6">
+                        <div class="volume-info sample-volume-info">60</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sample-descr">
+              /song-bird/src/js/index.js 751 bytes [built] [code generated]
+              ./song-bird/src/js/bird.js 26.5 KiB [built] [code generated]
+              webpack 5.75.0 compiled successfully in 537 ms
+              /song-bird/src/js/index.js 751 bytes [built] [code generated]
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="../dist/bundle-gall.js"></script>
+</body>
+</html>
